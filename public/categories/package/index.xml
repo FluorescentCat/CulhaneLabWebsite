@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Package on Culhane Lab</title>
+    <link>//localhost:4321/categories/package/</link>
+    <description>Recent content in Package on Culhane Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:4321/categories/package/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tachyons for Style</title>
+      <link>//localhost:4321/project/giraffes/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/project/giraffes/</guid>
+      <description>Tachyons is a design system that allows you to design gorgeous interfaces in the browser with little effort. Because Speed Building this static site generator theme was the first time I used an Atomic (or Functional) CSS system like Tachyons. It&amp;rsquo;s a design system that provides very small (which means fast) CSS modules that you can use in your HTML. So, rather than writing every line of CSS, you apply the style you need as you write your HTML with easy to understand shorthand class names.</description>
+    </item>
+    <item>
+      <title>Alumni</title>
+      <link>//localhost:4321/people/alumni/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/people/alumni/</guid>
+      <description>“Grid is the very first CSS module created specifically to solve the layout problems we&amp;rsquo;ve all been hacking our way around for as long as we&amp;rsquo;ve been making websites.” — Chris House, A Complete Guide to CSS Grid Layout 1&#xA;Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times the phrase &amp;ldquo;&amp;hellip;there&amp;rsquo;s got to be a better way to do this&amp;rdquo; has passed my lips. Most times, while fighting with floats and widths of content and sidebars or just basically trying to get something beside something else without using a stupid TABLE.</description>
+    </item>
+    <item>
+      <title>Palmer Penguins</title>
+      <link>//localhost:4321/project/penguins/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/project/penguins/</guid>
+      <description>“Grid is the very first CSS module created specifically to solve the layout problems we&amp;rsquo;ve all been hacking our way around for as long as we&amp;rsquo;ve been making websites.” — Chris House, A Complete Guide to CSS Grid Layout 1&#xA;Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times the phrase &amp;ldquo;&amp;hellip;there&amp;rsquo;s got to be a better way to do this&amp;rdquo; has passed my lips. Most times, while fighting with floats and widths of content and sidebars or just basically trying to get something beside something else without using a stupid TABLE.</description>
+    </item>
+    <item>
+      <title>PI</title>
+      <link>//localhost:4321/people/pi/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/people/pi/</guid>
+      <description>Prof. Aedin Culhane Aedín Culhane is a Professor of Biomedical Sciences (Cancer Genomics) in the UL School of Medicine. She is a computational oncologist with expertise in multi-omics data integration, statistical genomics, clinical bioinformatics and genomics in oncology. She has over 20 years’ experience in cancer genomics, of which over 15 years were in the Dana-Farber Cancer Institute and Harvard TH Chan School of Public Health in Boston, USA. Her recent research focuses on algorithm development and integrative data of single cell molecular data in cancer to identify molecules that regulate and can be targeted during tumour development, progression, drug response and resistance.</description>
+    </item>
+    <item>
+      <title>Team</title>
+      <link>//localhost:4321/people/team/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/people/team/</guid>
+      <description> Dr. Maria Doyle Publications Ahmad Alkhan Publications Michael Lynch Publications Brendan Rearden Publications Team Extended Dr. Olywn Mahon Publications Dr. Eanna Fennell Publications Lauren Hsu Publications </description>
+    </item>
+    <item>
+      <title>Bakeoff</title>
+      <link>//localhost:4321/project/bakeoff/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/project/bakeoff/</guid>
+      <description>Formspree makes it easy to receive submissions from HTML forms on your static website. Functional Form This theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form (/content/forms/contact.md). Of course, the example shown below (your@email.here) must not be used. Please use your actual email address.</description>
+    </item>
+    <item>
+      <title>Algorithms and methods for integrative analysis of single cell omics data</title>
+      <link>//localhost:4321/project/singlecellomics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/project/singlecellomics/</guid>
+      <description>We are developing matrix factorization and clustering methods for the integrative analysis of scRNAseq and multi omics single cell data. Corral ….&#xA;Michaels demux&#xA;Software Publications Hsu and Culhane 2020; Hsu and Culhane 2021; Lê Cao et al. 2021; Mirzayi et al. 2021; Thorsson et al. 2018; Gusenleitner, Culhane, and Culhane, n.d.&#xA;Funding Sources This project is funded by a the DoD and CZI Science Seed Network awards.&#xA;References Gusenleitner, Daniel, Aedin Culhane, and Maintainer Aedin Culhane.</description>
+    </item>
+    <item>
+      <title>Bioconductor: Open Source Software for Genomics</title>
+      <link>//localhost:4321/project/bioconductor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/project/bioconductor/</guid>
+      <description>Providing Bioconductor training by redeveloping the website and developing global infrastructure to deliver high quality community-led training in local languages. Bioconductor is an open source, open development software project in the R statistical software language and is widely used in bioinformatics, immunology, microbiology and single-cell genomics. Over 1200 developers have contributed software that is downloaded by users over 500K times per year.&#xA;In April 2020, we established a Community Advisory Board (CAB) that includes elected representatives from America, Europe, Africa, Asia and Latin America to outreach to the growing global Bioconductor community.</description>
+    </item>
+    <item>
+      <title>Connected Clinical Data: an eHealth Hub For Cancer</title>
+      <link>//localhost:4321/project/connectedclinicaldata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/project/connectedclinicaldata/</guid>
+      <description>We lead all-island eHealth Hub for Cancer is an all-island partnership on the island of Ireland that is building software and data platforms using best practice open science international health data standards to unlock and share health data, to grow clinical cancer research and improve cancer care. Funding Sources The eHealth-Hub for Cancer is an emerging hub of excellence funded under the Higher Education Authority Shared Island North-South Program.</description>
+    </item>
+    <item>
+      <title>Connecting 1&#43; Million Genomes with Genomic Data Infrastructure (GDI)</title>
+      <link>//localhost:4321/project/gdi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/project/gdi/</guid>
+      <description>Our lab are working in Pillar II of the GDI and leading activity 3 described below. In Ireland, the programme is jointly funded by the European Commission and the Health Research Board. The overall programme is designed to support the European 1+ Million Genomes (1+MG) Initiative. Specifically, GDI will drive the development, deployment and operation of sustainable data-access infrastructures within each participating country including the legal frameworks, operational procedures and ethics principles required to foster and maintain citizens’ trust in cross-border access to highly sensitive personal data.</description>
+    </item>
+    <item>
+      <title>The role of immune and other cells in the tumor microenvironment in cancer</title>
+      <link>//localhost:4321/project/tumormicroenvironment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/project/tumormicroenvironment/</guid>
+      <description>We are studying the immune environment associated with response to CAR-T Cell Therapy in Kidney Cancer with the Marasco lab in Dana-Farber Cancer Institute. CAR-T Cell Therapy in Kidney Cancer Metastatic clear cell renal cell carcinoma (mccRCC) patients have poor 5-year overall survival rate and there is an urgent need to develop therapeutics for these patients. Chimeric antigen receptor (CAR) T cell therapy, which reprograms a patient’s immune system to recognize and attack cancer cells.</description>
+    </item>
+  </channel>
+</rss>

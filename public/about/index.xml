@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Culhane Lab</title>
+    <link>//localhost:4321/about/</link>
+    <description>Recent content in About on Culhane Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="//localhost:4321/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:4321/about/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/about/header/</guid>
+      <description>Data is revolutionizing how we diagnose and treat cancer. Advances in sequencing allow us to spatially map and measure and the genome, transcriptome and other multi-omics of each individual single cell in a tumor. These data allow us to build a map of tumor architecture, profile the cells within the tumor and its microenviroment, understand cell-cell interactions and identify new targets for diagnosis and treatment.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:4321/about/sidebar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/about/sidebar/</guid>
+      <description>** index doesn&amp;rsquo;t contain a body, just front matter above. See about/list.html in the layouts folder **</description>
+    </item>
+    <item>
+      <title>Algorithms for multi-modal analysis of cancer ’omics</title>
+      <link>//localhost:4321/about/main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:4321/about/main/</guid>
+      <description>** index doesn&amp;rsquo;t contain a body, just front matter above. See about/list.html in the layouts folder **</description>
+    </item>
+  </channel>
+</rss>

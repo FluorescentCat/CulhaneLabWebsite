@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.124.0">
+<title>Algorithms and methods for integrative analysis of single cell omics data | Culhane Lab</title>
+
+
+<meta property="twitter:site" content="@apreshill">
+<meta property="twitter:creator" content="@apreshill">
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="We are developing matrix factorization and clustering methods for the integrative analysis of scRNAseq and multi omics single cell data.">
+
+
+<meta property="og:site_name" content="Culhane Lab">
+<meta property="og:title" content="Algorithms and methods for integrative analysis of single cell omics data | Culhane Lab">
+<meta property="og:description" content="We are developing matrix factorization and clustering methods for the integrative analysis of scRNAseq and multi omics single cell data." />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="//localhost:4321/project/singlecellomics/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="//localhost:4321/project/singlecellomics/featured.png" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="//localhost:4321/project/singlecellomics/featured.png" >
+    
+    
+  <meta itemprop="name" content="Algorithms and methods for integrative analysis of single cell omics data">
+<meta itemprop="description" content="We are developing matrix factorization and clustering methods for the integrative analysis of scRNAseq and multi omics single cell data. Corral ….
+Michaels demux
+Software Publications Hsu and Culhane 2020; Hsu and Culhane 2021; Lê Cao et al. 2021; Mirzayi et al. 2021; Thorsson et al. 2018; Gusenleitner, Culhane, and Culhane, n.d.
+Funding Sources This project is funded by a the DoD and CZI Science Seed Network awards.
+References Gusenleitner, Daniel, Aedin Culhane, and Maintainer Aedin Culhane.">
+
+<meta itemprop="wordCount" content="229"><meta itemprop="image" content="//localhost:4321/project/singlecellomics/featured.png" />
+<meta itemprop="keywords" content="hugo-site," />
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.964cdf962c5081c224b388e6226b3ab53a3649e67054149481515c0c100913be.css" integrity="sha256-lkzflixQgcIks4jmIms6tTo2SeZwVBSUgVFcDBAJE74=" media="screen">
+  
+  
+  <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.24865177cc5cf9f4316a20453687b36013aeba71b8486e393b890f9465b268ef.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container single-sidebar">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="//localhost:4321/" title="Home">
+      <img src="/img/DNAhelix.png" class="dib db-l h2 w-auto" alt="Culhane Lab">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About the lab">About</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/project/" title="Projects">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/people/" title="People">People</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/talk/" title="Talks">Talks</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/publications/" title="Publications">Publications</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/joinus/" title="Join us">Join us</a>
+      
+      
+      <div class="dib v-mid">
+        <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/CompOnco" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://twitter.com/aedinculhane" title="twitter" target="_blank" rel="me noopener">
+      <i class="fab fa-twitter fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+      </div>
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 pr3-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Algorithms and methods for integrative analysis of single cell omics data</h1>
+        
+        
+        
+        
+      
+      
+      </header>
+      <section class="post-body pt5 pb4">
+        
+
+
+
+<h3 id="we-are-developing-matrix-factorization-and-clustering-methods-for-the-integrative-analysis-of-scrnaseq-and-multi-omics-single-cell-data">We are developing matrix factorization and clustering methods for the integrative analysis of scRNAseq and multi omics single cell data.
+  <a href="#we-are-developing-matrix-factorization-and-clustering-methods-for-the-integrative-analysis-of-scrnaseq-and-multi-omics-single-cell-data"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<hr>
+<p>Corral ….</p>
+<p>Michaels demux</p>
+<hr>
+
+
+
+
+<h3 id="software">Software
+  <a href="#software"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<figure><img src="/project/singlecellomics/bioconductor.png"
+    alt="Traditional right sidebar layout">
+</figure>
+
+<hr>
+
+
+
+
+<h3 id="publications">Publications
+  <a href="#publications"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>
+<a href="https://www.biorxiv.org/content/10.1101/2021.11.24.469874v3" target="_blank" rel="noopener">Hsu and Culhane 2020; Hsu and Culhane 2021; Lê Cao et al. 2021; Mirzayi et al. 2021; Thorsson et al. 2018; Gusenleitner, Culhane, and Culhane, n.d.</a></p>
+<hr>
+
+
+
+
+<h3 id="funding-sources">Funding Sources
+  <a href="#funding-sources"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>This project is funded by a the DoD and CZI Science Seed Network awards.</p>
+<figure><img src="/project/singlecellomics/CZI_science.png"
+    alt="Traditional right sidebar layout">
+</figure>
+
+<figure><img src="/project/singlecellomics/DOD_cdmrp_logo.jpeg"
+    alt="Traditional right sidebar layout">
+</figure>
+
+<hr>
+
+
+
+
+<h3 id="references">References
+  <a href="#references"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Gusenleitner, Daniel, Aedin Culhane, and Maintainer Aedin Culhane. n.d. “Package ‘iBBiG’.”</p>
+<p>Hsu, Lauren L., and Aedin C. Culhane. 2020. “Impact of Data Preprocessing on Integrative Matrix Factorization of Single Cell Data.” Frontiers in Oncology 10: 973. 
+<a href="https://doi.org/10.3389/fonc.2020.00973" target="_blank" rel="noopener">https://doi.org/10.3389/fonc.2020.00973</a>.</p>
+<p>Hsu, Lauren L., and Aedín C. Culhane. 2021. “Corral: Single-Cell RNA-Seq Dimension Reduction, Batch Integration, and Visualization with Correspondence Analysis.”
+bioRxiv, January, 2021.11.24.469874. 
+<a href="https://doi.org/10.1101/2021.11.24.469874" target="_blank" rel="noopener">https://doi.org/10.1101/2021.11.24.469874</a>.</p>
+<p>Lê Cao, Kim-Anh, Al J. Abadi, Emily F. Davis-Marcisak, Lauren Hsu, Arshi Arora, Alexis Coullomb, Atul Deshpande, et al. 2021. “Community-Wide Hackathons to Identify Central Themes in Single-Cell Multi-Omics.” Genome Biology 22 (1): 220. 
+<a href="https://doi.org/10.1186/s13059-021-02433-9" target="_blank" rel="noopener">https://doi.org/10.1186/s13059-021-02433-9</a>.</p>
+<p>Mirzayi, Chloe, Audrey Renson, Fatima Zohra, Shaimaa Elsafoury, Ludwig Geistlinger, Lora J. Kasselman, Kelly Eckenrode, et al. 2021. “Reporting Guidelines for Human Microbiome Research: The STORMS Checklist.” Nature Medicine 27 (11): 1885–92. 
+<a href="https://doi.org/10.1038/s41591-021-01552-x" target="_blank" rel="noopener">https://doi.org/10.1038/s41591-021-01552-x</a>.</p>
+<p>Thorsson, Vésteinn, David L. Gibbs, Scott D. Brown, Denise Wolf, Dante S. Bortone, Tai-Hsien Ou Yang, Eduard Porta-Pardo, et al. 2018. “The Immune Landscape of Cancer.” Immunity 48 (4): 812–830.e14. 
+<a href="https://doi.org/10.1016/j.immuni.2018.03.023" target="_blank" rel="noopener">https://doi.org/10.1016/j.immuni.2018.03.023</a>.</p>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="prev dtc pr2 tl v-top fw6"
+    href="//localhost:4321/project/bakeoff/">&larr; Bakeoff</a>
+  
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="//localhost:4321/project/bioconductor/">Bioconductor: Open Source Software for Genomics &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+  </section>
+</main>
+<aside class="page-sidebar" role="complementary">
+                         
+ 
+
+
+                       
+ 
+
+
+
+
+
+
+
+
+
+
+
+  <img src="/project/sidebar-listing.jpg" class="db ma0">
+
+
+<div class="blog-info ph4 pt4 pb4 pb0-l">
+  
+
+  <h1 class="f3">A Sidebar for Your Projects</h1>
+  <p class="f6 lh-copy measure">Projects can be anything!
+Check out the _index.md file in the /project folder
+to edit this content.</p>
+  <p class="f7 measure lh-copy i mh0-l">Written by The R Markdown Team @RStudio</p>
+
+
+  
+  <div class="dib bt bw1 b--black-10">
+    
+      <small class="db f7 pt3"><a href="/project/" class="dib fw7 ttu">View all projects</a></small>
+    
+    
+    
+    
+  </div>
+
+
+</div>
+
+
+<div class="ad-unit pa4">
+  
+  <p class="f7 measure-narrow lh-copy mv0 pt5"><span class="b ttu db">Made by Formspree</span><span><a href="https://formspree.io" target="_blank">Formspree is a form backend, API and email  service for HTML forms</a>. It is the simplest way to collect form submissions on your static website.</span></p>
+  
+</div>
+
+  
+  <details open class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">January 1, 0001</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">2 minute read, 229 words</dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Categories:</dt>
+    <dd class="fw5 ml0"> <a href="//localhost:4321/categories/theme-features">Theme Features</a>  <a href="//localhost:4321/categories/r">R</a>  <a href="//localhost:4321/categories/package">package</a> </dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Tags:</dt>
+    <dd class="fw5 ml0"> <a href="//localhost:4321/tags/hugo-site">hugo-site</a> </dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+    <dd class="fw5 ml0"><a href="/blog/spoonful-series/">A Spoonful of Hugo</a></dd>
+    
+    <dd class="fw5 ml0"><a href="/blog/spoonful-series/03-spoonful/">A third post</a></dd>
+    
+    <dd class="fw5 ml0"><a href="/blog/spoonful-series/02-spoonful/">A second post</a></dd>
+    
+  </dl>
+</details>
+
+</aside>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2024 Culhane Lab, Culhane Lab
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/CompOnco" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://twitter.com/aedinculhane" title="twitter" target="_blank" rel="me noopener">
+      <i class="fab fa-twitter fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="/license/" title="License">License</a>
+      
+      <a class="dib pv1 ph2 link" href="/contact/" title="Contact form">Contact</a>
+      
+      <a class="dib pv1 ph2 link" href="/contributors/" title="Contributors">Contributors</a>
+      
+    </div>
+  </nav>
+  
+    <script>
+
+    var i, text, code, codes = document.getElementsByTagName('code');
+    for (let i = 0; i < codes.length;) {
+      code = codes[i];
+      if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+        text = code.textContent;
+        if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+          text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+          code.textContent = text;
+        }
+        if (/^\\\((.|\s)+\\\)$/.test(text) ||
+            /^\\\[(.|\s)+\\\]$/.test(text) ||
+            /^\$(.|\s)+\$$/.test(text) ||
+            /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+          code.outerHTML = code.innerHTML;  
+          continue;
+        }
+      }
+      i++;
+    }
+</script>
+
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+
+    
+  
+  
+</footer>
+
+      </div>
+    </body>
+</html>
